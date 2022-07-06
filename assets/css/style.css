@@ -16,6 +16,13 @@ a{
 .organization{
     margin: 2em;
 }
+.gradient{
+    background-image: linear-gradient(to right, blue, blueviolet,red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: white;
+}
 .color-logo{
     color:blue;
 }
@@ -24,7 +31,14 @@ a{
 }
 .header{
     background-color: #02234e;
-    padding: 20px 0;
+    padding: 40px 0;
+}
+#title{
+    background-image: linear-gradient(to right, blue, violet, blueviolet);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: white;
 }
 .header-container{
     max-width: 960px;
@@ -32,6 +46,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
 }
 .header-container h1{
     font-size: 2.25em;
@@ -42,6 +57,8 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
+    width: 100%;
 }
 .nav-menu >a{
     color: #fff;
@@ -52,6 +69,8 @@ a{
 .nav-menu > a:hover{
     background-color: gray;
     border-radius: 10px;
+    width: 100%;
+    text-align: center;
 }
 .language{
     position: relative;
@@ -153,21 +172,53 @@ a.br::before{
     color: blue;
 }
 .button-strong{
-    margin: 15px;
+    margin: 2em 0;
     padding: 10px;
-    background-color: aqua;
+    background-image:radial-gradient( blue, violet, red);
+    background-clip: content-box;
 }
-.certificates img{
-    width: 100%;
+.about h2{
+    margin: 2em 0;
+    text-align: center;
 }
-.cursor{
-    background-color: white;
-    width: 5px;
-    height: 30px;
-    display: inline-block;
+.efect{
+    color: white;
+    font-weight: 600;
+    animation: changeColor 1s infinite; /* propriedade de animação */
+}
+
+@keyframes changeColor {
+    0%{
+        color: #fff;
+    }
+    50%{
+        color: transparent;
+    }
+    100%{
+        color: #fff;
+    }
+}
+#sub-titile{
+    margin-bottom: 1em;
 }
 .avatar img{
     width:288px;
+    margin: 2em 0;
+}
+.fa-js{
+    color: yellow;
+    font-size: 4em;
+}
+.fa-html5{
+    color: orangered;
+    font-size: 4em;
+}
+.fa-css3-alt{
+    color: rgb(0, 119, 255);
+    font-size: 4em;
+}
+.certificates img{
+    width: 100%;
 }
 .footer{
     background-color: #02234e;
@@ -175,3 +226,14 @@ a.br::before{
     text-align: center;
     font-weight: bold;
 }
+/* @media(max-width: 550px) {
+    .header{
+        height: 700px;
+    }
+    .header-container{
+        max-width: 800px;
+        height: 700px;
+        margin: 0 auto;
+        
+    }
+} */
