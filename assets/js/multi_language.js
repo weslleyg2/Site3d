@@ -45,6 +45,10 @@
         document.querySelector(".knowledge .javascript h2").textContent = "Javascript";
         document.querySelector(".knowledge .javascript h4").textContent = "2 meses de experiência";
         document.querySelector(".knowledge .javascript p").textContent = "JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web.";
+       //projetos
+        
+       document.querySelector(".projects h2").textContent = "Projetos";
+       
         // Certificados
 
         document.querySelector(".certificates h2").textContent = "Certificados";
@@ -102,6 +106,9 @@
         document.querySelector(".knowledge .javascript h2").textContent = "Javascript";
         document.querySelector(".knowledge .javascript h4").textContent = "2 months of experience";
         document.querySelector(".knowledge .javascript p").textContent = "JavaScript is a structured, multi-paradigm, weak dynamically typed, high-level scripting interpreted programming language. Along with HTML and CSS, JavaScript is one of the three main technologies of the World Wide Web.";
+        //projects
+        
+        document.querySelector(".projects h2").textContent = "Projects.";
         // Certificates
 
         document.querySelector(".certificates h2").textContent = "Certificates";

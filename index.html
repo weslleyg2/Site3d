@@ -18,17 +18,23 @@
 
 
             <div class="header-container">
-                <h1><a href="./index.html" class="logo"><span class="color-logo">{</span><strong class="strong-logo"> Weslley </strong><span class="color-logo">}</span></a>
+                <h1><a href="./index.html" class="logo"><span class="color-logo">{</span><strong class="strong-logo">
+                            Weslley </strong><span class="color-logo">}</span></a>
                 </h1>
 
-                <nav class="nav-menu">
+                <nav class="nav-menu" id="nav-menu">
+                    <button id="btn-mobile">Menu
+                        <span id="hamburger"></span>
+                    </button>
+                    <div id="menu-top">
 
-                    <a href="#" class="home">Home</a>
-                    <a href="#" class="about">About</a>
-                    <a href="#" class="knowledge">Knowledge</a>
-                    <a href="#" class="projects">Projects</a>
-                    <a href="#" class="certificates">Certificates</a>
-                    <a href="#" class="contact">Contact</a>
+                        <a href="./index.html" class="home">Home</a>
+                        <a href="#about" class="about">About</a>
+                        <a href="#knowledge" class="knowledge">Knowledge</a>
+                        <a href="#projects" class="projects">Projects</a>
+                        <a href="#certificates" class="certificates">Certificates</a>
+                        <a href="#contacts" class="contact">Contact</a>
+                    </div>
 
                     <div class="language">
                         <div class="language-selected">
@@ -64,7 +70,7 @@
             </section>
 
             <section class="about">
-                <h2 class="gradient">About</h2>
+                <h2 class="gradient" id="about">About</h2>
 
                 <div>
                     <img src="./assets/img/weslley.jpg" alt="My photo">
@@ -77,15 +83,16 @@
 
                 <div class="download">
                     <a href="./assets/download/Currículo Weslley Desenvolvedor.pdf"
-                            download="resume in portuguese brazil" class="button-strong"><button class="button">Resume in Portuguese</button> </a>
-                    <a href="./assets/download/Resume-Weslley.pdf"
-                            download="resume in english" class="button-strong"><button class="button button2">Resume in
+                        download="resume in portuguese brazil" class="button-strong"><button class="button">Resume in
+                            Portuguese</button> </a>
+                    <a href="./assets/download/Resume-Weslley.pdf" download="resume in english"
+                        class="button-strong"><button class="button button2">Resume in
                             English</button></a>
                 </div>
 
             </section>
             <section class="knowledge">
-                <h2 class="gradient">Knowledge</h2>
+                <h2 class="gradient" id="knowledge">Knowledge</h2>
 
                 <div class="html">
                     <h2>Html</h2>
@@ -100,7 +107,8 @@
 
                     <h4>6 months of experience</h4>
                     <!--6 meses de experiência-->
-                    <p>CSS is the language we use to style an HTML document. CSS describes how HTML elements should be displayed.
+                    <p>CSS is the language we use to style an HTML document. CSS describes how HTML elements should be
+                        displayed.
                     </p>
                 </div>
                 <div class="javascript">
@@ -108,11 +116,16 @@
 
                     <h4>2 months of experience</h4>
                     <!--2 meses de experiência-->
-                    <p>JavaScript is a structured, multi-paradigm, weak dynamically typed, high-level scripting interpreted programming language. Along with HTML and CSS, JavaScript is one of the three main technologies of the World Wide Web.</p>
+                    <p>JavaScript is a structured, multi-paradigm, weak dynamically typed, high-level scripting
+                        interpreted programming language. Along with HTML and CSS, JavaScript is one of the three main
+                        technologies of the World Wide Web.</p>
                 </div>
             </section>
+            <section class="projects">
+                <h2 class="gradient" id="projects">Projects</h2>
+            </section>
             <section class="certificates">
-                <h2 class="gradient">Certificates</h2>
+                <h2 class="gradient" id="certificates">Certificates</h2>
                 <div class="web-design">
 
                     <img src="./assets/img/Curso Web Design Completo HTML5- CSS3 e JS mais  5 Pojetos.jpg"
@@ -122,8 +135,7 @@
                 </div>
                 <div class="scrum">
 
-                    <img src="./assets/img/Projetos ageis com SCRUM.jpg"
-                        alt="Front-end course">
+                    <img src="./assets/img/Projetos ageis com SCRUM.jpg" alt="Front-end course">
                     <p>Agile projects with SCRUM</p>
                     <!--Curso Web Design Completo HTML5- CSS3 e JS mais  5 Pojetos-->
                 </div>
@@ -131,7 +143,7 @@
             </section>
 
             <section class="contacts">
-                <h2 class="gradient">Contact</h2>
+                <h2 class="gradient" id="contacts">Contact</h2>
                 <div class="email">
 
                     <h3>Send an e-mail</h3>
@@ -152,7 +164,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./assets/js/multi_language.js"></script>
-    <!-- <script src="./assets/js/script.js"></script> -->
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
