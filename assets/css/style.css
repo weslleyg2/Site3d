@@ -3,7 +3,9 @@ body {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,6 +15,10 @@ body {
 a {
     text-decoration: none;
     color: white;
+}
+
+:root {
+    --cor-menu-hamburger: white;
 }
 
 .organization {
@@ -298,19 +304,25 @@ a.br::before {
     /* propriedade de animação */
 }
 
+
 @keyframes changeColor {
     0% {
         color: #fff;
     }
-
+    
     50% {
         color: transparent;
     }
-
+    
     100% {
         color: #fff;
     }
 }
+/* #about,#knowledge,#projects,#certificates,#contacts{
+    transform: translateY(150px);
+    transition: .8s all ease-in;
+}
+ */
 
 #sub-title {
     margin-bottom: 1em;
@@ -367,23 +379,28 @@ a.br::before {
         color: transparent;
         cursor: pointer;
     }
-    #hamburger{
+
+    #hamburger {
         width: 20px;
-        border-top: 2px solid white;
-        margin: 0 -30%;
+        border-top: 2px solid var(--cor-menu-hamburger);
+        margin: 0 -30% 1em;
+
     }
-    #hamburger::after, #hamburger::before{
+
+    #hamburger::after, #hamburger::before {
         content: '';
         display: block;
         width: 20px;
         height: 2px;
-        background: white;
+        background: var(--cor-menu-hamburger);
         margin-top: 5px;
     }
+
     #menu-top {
-        display: block;
+        display: none;
         visibility: hidden;
         overflow-y: hidden;
+
     }
 
     #nav-menu.active #menu-top {
@@ -394,9 +411,13 @@ a.br::before {
         width: 100%;
         visibility: visible;
         overflow: auto;
-        transition:  all 0.5s ease-out;
-        
-        
+        transition: all 0.5s ease-out;
+
+
+    }
+
+    .no-show {
+        display: none;
     }
 
 }
