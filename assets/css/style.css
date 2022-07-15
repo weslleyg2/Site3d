@@ -3,9 +3,11 @@ body {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -16,7 +18,12 @@ a {
     text-decoration: none;
     color: white;
 }
-
+p {
+    font-family: 'Acme', sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 1em;
+}
 :root {
     --cor-menu-hamburger: white;
 }
@@ -296,7 +303,17 @@ a.br::before {
     margin: 2em 0;
     text-align: center;
 }
-
+.knowledge{
+    margin: 2em 0;
+    text-align: center;
+}
+#knowledge{
+    margin: 2em 0;
+}
+.html, .css, .javascript{
+    border: 10px solid orangered;
+    margin-bottom: 1em;
+}
 .efect {
     color: white;
     font-weight: 600;
@@ -304,20 +321,32 @@ a.br::before {
     /* propriedade de animação */
 }
 
+.imgage-myself {
+    display: flex;
+    justify-content: center;
+
+}
+
+.photo-myself {
+    border-radius: 50%;
+    border: 2px solid blueviolet;
+    margin-bottom: 3em;
+}
 
 @keyframes changeColor {
     0% {
         color: #fff;
     }
-    
+
     50% {
         color: transparent;
     }
-    
+
     100% {
         color: #fff;
     }
 }
+
 /* #about,#knowledge,#projects,#certificates,#contacts{
     transform: translateY(150px);
     transition: .8s all ease-in;
@@ -419,5 +448,7 @@ a.br::before {
     .no-show {
         display: none;
     }
+
+
 
 }
