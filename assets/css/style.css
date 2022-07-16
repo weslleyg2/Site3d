@@ -371,10 +371,23 @@ a.br::before {
     position: absolute;
     top: -100px;
     right: 0px;
+    z-index: 10;
+
+}
+.icon-right::after{
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 100px;
+    background-color:rgba(112, 112, 228, 0.5);
+    left: -15px;
+    top: -25px;
+    transform: rotate(20deg);
+
 
 }
 .javascript .icon-right{
-    top: 0;
+    top: 20px;
 }
 .efect {
     color: white;
