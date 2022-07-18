@@ -314,11 +314,13 @@ a.br::before {
     margin: 2em 0em;
     text-align: center;
 }
-#menu-top .knowledge{
+
+#menu-top .knowledge {
     margin: 0;
 }
-.box{
-    position: relative;  
+
+.box {
+    position: relative;
     width: 250px;
     height: 350px;
     display: flex;
@@ -329,7 +331,7 @@ a.br::before {
     background: linear-gradient(45deg, rgb(75, 73, 73), #000);
 }
 
-.box::before{
+.box::before {
     content: '';
     position: absolute;
     width: 450px;
@@ -337,60 +339,108 @@ a.br::before {
     background: linear-gradient(blue, violet);
     animation: rotate 4s infinite linear;
 }
-.box::after{
+
+.box::after {
     content: '';
     position: absolute;
     inset: 4px;
     background: linear-gradient(45deg, rgb(75, 73, 73), #000);
 }
-@keyframes rotate{
-    0%{
+
+@keyframes rotate {
+    0% {
         transform: rotate(0deg);
     }
-    100%{
+
+    100% {
         transform: rotate(360deg);
     }
 }
-.box .html,.box .css,.box .javascript{
+
+.box .html, .box .css, .box .javascript {
     position: relative;
     width: 240px;
     z-index: 10;
     margin-bottom: 1em;
     border-radius: 16px;
 }
-.box .html h2, .box .css h2{
+
+.box .html h2{
     margin: -3em 0 1em;
-    text-align:left;
+    text-align: left;
+    border-radius: 10px;
+    padding-left: 1em;
+    color: black;
 }
-.box .javascript h2{
-    margin:2em 0 1em;
-    text-align:left;
+.box .css h2 {
+    margin: -1.2em 0 0em;
+    text-align: left;
+    border-radius: 10px;
+    padding-left: 1em;
+    color: black;
 }
-.box .html h4, .box .css h4,.box .javascript h4{
-    margin: 1em 0;
+.box .html h2{
+    background-color: orangered;
 }
-.icon-right{
+.box .css h2{
+    background-color: blue;
+}
+.box .javascript h2 {
+    margin: 2em 0 1em;
+    text-align: left;
+    background-color: yellow;
+    color:black;
+    padding-left: 1em;
+    border-radius: 10px;
+}
+
+.box .html h4, .box .css h4, .box .javascript h4 {
+    margin: 1.5em 0;
+}
+
+.icon-right {
     position: absolute;
     top: -100px;
     right: 0px;
-    z-index: 10;
 
 }
-.icon-right::after{
+
+.icon-right::after {
     position: absolute;
     content: '';
     width: 100px;
     height: 100px;
-    background-color:rgba(112, 112, 228, 0.5);
+    background-color: rgba(112, 112, 228, 0.5);
     left: -15px;
     top: -25px;
     transform: rotate(20deg);
-
+    z-index: -1;
 
 }
-.javascript .icon-right{
-    top: 20px;
+
+.html .icon-right::after {
+    background-color: orangered;
 }
+.css .icon-right::after {
+    background-color: blue;
+}
+.css .fa-css3-alt{
+    top: -64.5px;
+}
+.javascript .icon-right::after {
+    background-color: yellow;
+}
+
+.html .fa-html5, .javascript .fa-js,
+.css .fa-css3-alt {
+    color: black;
+    font-size: 4em;
+}
+
+.javascript .icon-right {
+    top: 15px;
+}
+
 .efect {
     color: white;
     font-weight: 600;
