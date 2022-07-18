@@ -311,10 +311,12 @@ a.br::before {
 }
 
 .knowledge {
-    margin: 2em 0;
+    margin: 2em 0em;
     text-align: center;
 }
-
+#menu-top .knowledge{
+    margin: 0;
+}
 .box{
     position: relative;  
     width: 250px;
