@@ -584,7 +584,9 @@ a.br::before {
     }
 
     .knowledge {
-        margin: 0 .21em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
 
