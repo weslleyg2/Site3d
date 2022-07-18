@@ -365,13 +365,14 @@ a.br::before {
     border-radius: 16px;
 }
 
-.box .html h2{
+.box .html h2 {
     margin: -3em 0 1em;
     text-align: left;
     border-radius: 10px;
     padding-left: 1em;
     color: black;
 }
+
 .box .css h2 {
     margin: -1.2em 0 0em;
     text-align: left;
@@ -379,17 +380,20 @@ a.br::before {
     padding-left: 1em;
     color: black;
 }
-.box .html h2{
+
+.box .html h2 {
     background-color: orangered;
 }
-.box .css h2{
+
+.box .css h2 {
     background-color: blue;
 }
+
 .box .javascript h2 {
     margin: 2em 0 1em;
     text-align: left;
     background-color: yellow;
-    color:black;
+    color: black;
     padding-left: 1em;
     border-radius: 10px;
 }
@@ -421,12 +425,15 @@ a.br::before {
 .html .icon-right::after {
     background-color: orangered;
 }
+
 .css .icon-right::after {
     background-color: blue;
 }
-.css .fa-css3-alt{
+
+.css .fa-css3-alt {
     top: -64.5px;
 }
+
 .javascript .icon-right::after {
     background-color: yellow;
 }
@@ -576,6 +583,9 @@ a.br::before {
         display: none;
     }
 
+    .knowledge {
+        margin: 0 .21em;
+    }
 
 
 }
