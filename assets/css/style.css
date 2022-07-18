@@ -374,7 +374,7 @@ a.br::before {
 }
 
 .box .css h2 {
-    margin: -1.2em 0 0em;
+    margin: -2em 0 0em;
     text-align: left;
     border-radius: 10px;
     padding-left: 1em;
@@ -431,7 +431,7 @@ a.br::before {
 }
 
 .css .fa-css3-alt {
-    top: -64.5px;
+    top: -87.5px;
 }
 
 .javascript .icon-right::after {
@@ -507,7 +507,7 @@ a.br::before {
 }
 
 .fa-css3-alt {
-    color: rgb(0, 119, 255);
+    color: blue;
     font-size: 4em;
 }
 
