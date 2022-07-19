@@ -48,6 +48,7 @@
        //projetos
         
        document.querySelector(".projects h2").textContent = "Projetos";
+       document.querySelector(".projects p").textContent = "Em Breve";
        
         // Certificados
 
@@ -62,7 +63,6 @@
         // linkedin
         
         document.querySelector(".contacts .linkedin h3").textContent = "Linkedin";
-        document.querySelector(".contacts .linkedin p").textContent = "/weslley-vander-6a579392/";
         // rodapé
         document.querySelector(".footer span").innerHTML = "&copy; - 2022 por Weslley Vander - Desenvolvedor Front-end";
 
@@ -109,6 +109,7 @@
         //projects
         
         document.querySelector(".projects h2").textContent = "Projects.";
+        document.querySelector(".projects p").textContent = "Coming Soon";
         // Certificates
 
         document.querySelector(".certificates h2").textContent = "Certificates";
@@ -122,7 +123,6 @@
         // linkedin
         
         document.querySelector(".contacts .linkedin h3").textContent = "Linkedin";
-        document.querySelector(".contacts .linkedin p").textContent = "/weslley-vander-6a579392/";
         // rodapé
         document.querySelector(".footer span").innerHTML = "&copy; - 2022 by Weslley Vander - Front-end Developer";
 
