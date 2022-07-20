@@ -11,4 +11,12 @@
     }
     
     btnMobile.addEventListener('click',toggleMenu);
+
+    let carouselImgs = new Carousel({
+        container: '.certificates',
+        itens: 'figure',
+        btnPrev: '.fa-angle-left',
+        btnNext: 'fa-angle-right'
+    });
+    
     })();
