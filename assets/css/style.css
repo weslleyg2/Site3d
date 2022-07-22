@@ -512,30 +512,51 @@ a.br::before {
     color: blue;
     font-size: 4em;
 }
-.soon{
+
+.soon {
     width: 80vw;
 }
+
 .download {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
+
 .download a {
     margin: 2em auto .5em;
 }
-.certificates .slideshow{
+
+.certificates .slideshow {
     overflow: auto;
 }
 
-.certificates .slideshow figure{
+.certificates .slideshow figure {
     display: inline-block;
 }
 
-.certificates figure img {
-    width: 80vw;
+.certificates figure h2 {
+text-align: center;
+transform: rotate(40deg);
+background-color:#023c4e98;
+position: relative;
+top: -3em;
+right: 0;
 }
-
+.certificates figure img {
+    width: 70vw;
+}
+.contacts .email i, .contacts .linkedin i{
+    font-size: 2em;
+    color: #b1c7e3;
+}
+.contact_information{
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+}
 .footer {
+    margin-top: 2em;
     background-color: #02234e;
     padding: 20px 0;
     text-align: center;
@@ -599,45 +620,53 @@ a.br::before {
         align-items: center;
     }
 
-    .certificates{
+    .certificates {
         overflow: auto;
     }
-    .certificates #certificates{
+
+    .certificates #certificates {
         overflow: visible;
     }
-    .certificates .slideshow{
+
+    .certificates .slideshow {
         position: relative;
         width: 100%;
         margin: auto;
         display: flex;
         width: 80vw;
-        gap: 4em;
+        gap: 1em;
     }
-    
-    .certificates .slideshow p{
+
+    .certificates .slideshow p {
         white-space: break-spaces;
 
     }
-    .certificates .slideshow .scrum .figure,.certificates .slideshow .web-design .figure{
+
+    .certificates .slideshow .scrum .figure, .certificates .slideshow .web-design .figure {
         position: absolute;
         opacity: 0;
-        transition:1s opacity;
+        transition: 1s opacity;
         width: 100%;
-        top:0;
+        top: 0;
         left: 0;
     }
-    .certificates .figure .show{
+
+    .certificates .figure .show {
         opacity: 1;
     }
-    .certificates .fa-angle-left,.certificates .fa-angle-right{
+
+    .certificates .fa-angle-left, .certificates .fa-angle-right {
         z-index: 3;
         position: absolute;
         top: 50%;
     }
-    .certificates .fa-angle-left{
+
+    .certificates .fa-angle-left {
         left: 10px;
     }
-    .certificates .fa-angle-right{
+
+    .certificates .fa-angle-right {
         right: 10px;
     }
+    
 }

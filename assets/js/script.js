@@ -1,5 +1,7 @@
 
-    const btnMobile = document.getElementById('btn-mobile');
+(function(){
+    'use strict';
+   const btnMobile = document.getElementById('btn-mobile');
     
     function toggleMenu(){
         const nav = document.getElementById('nav-menu');
@@ -10,12 +12,4 @@
     }
     
     btnMobile.addEventListener('click',toggleMenu);
-
-    
-
-let carouselImgs = new Carousel({
-    container: 'section.certificates',
-    itens: 'figure',
-    btnPrev: 'prev',
-    btnNext: 'next'
-});
+})();

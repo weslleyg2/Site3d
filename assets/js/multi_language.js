@@ -55,6 +55,9 @@
         document.querySelector(".certificates h2").textContent = "Certificados";
         document.querySelector(".certificates .web-design p").textContent = "Certificado Curso Web Design Completo HTML5- CSS3 e JS mais  5 Pojetos";
         document.querySelector(".certificates .scrum p").textContent = "Projetos ágeis com SCRUM";
+        document.querySelector(".certificates .logic p").textContent = "Lógica de Programação Essencial";
+        document.querySelector(".certificates .typescript h2").textContent = "Em Breve";
+        document.querySelector(".certificates .typescript p").textContent = "Curso de JavaScript e TypeScript do básico ao avançado 2022";
         // Contato
         //email
 
@@ -115,6 +118,9 @@
         document.querySelector(".certificates h2").textContent = "Certificates";
         document.querySelector(".certificates .web-design p").textContent = "Complete Web Design Course HTML5- CSS3 and JS plus 5 Projects";
         document.querySelector(".certificates .scrum p").textContent = "Agile projects with SCRUM";
+        document.querySelector(".certificates .logic p").textContent = "Essential Programming Logic";
+        document.querySelector(".certificates .typescript h2").textContent = "Coming Soon";
+        document.querySelector(".certificates .typescript p").textContent = "Basic to Advanced JavaScript and TypeScript Course 2022";
         // Contact
         //email
 
