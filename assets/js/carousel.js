@@ -13,7 +13,7 @@ function Carousel(config) {
     init();
     function init() {
         var _show = _this.container.querySelectorAll('.show');
-
+        
         Array.prototype.forEach.call(_show, function (sh) {
             sh.classList.remove('show');
         });
@@ -23,6 +23,7 @@ function Carousel(config) {
         _this.btnPrev.removeAttribute('style');
 
         addListeners();
+        
     }
     function addListeners() {
         _this.btnNext.addEventListener('click', showNextSlide);

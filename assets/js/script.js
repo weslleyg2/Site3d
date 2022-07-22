@@ -14,7 +14,7 @@
     
 
 let carouselImgs = new Carousel({
-    container: '.certificates',
+    container: 'section.certificates',
     itens: 'figure',
     btnPrev: 'prev',
     btnNext: 'next'
