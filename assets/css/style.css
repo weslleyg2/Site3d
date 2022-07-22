@@ -650,23 +650,7 @@ right: 0;
         top: 0;
         left: 0;
     }
-
-    .certificates .figure .show {
-        opacity: 1;
+    .contacts{
+        text-align: center;
     }
-
-    .certificates .fa-angle-left, .certificates .fa-angle-right {
-        z-index: 3;
-        position: absolute;
-        top: 50%;
-    }
-
-    .certificates .fa-angle-left {
-        left: 10px;
-    }
-
-    .certificates .fa-angle-right {
-        right: 10px;
-    }
-    
 }
