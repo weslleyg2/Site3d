@@ -654,3 +654,14 @@ right: 0;
         text-align: center;
     }
 }
+@media(min-width: 601px) {
+    .header-container h1{
+        font-size: 5em;
+    }
+    .nav-menu #menu-top>a{
+        font-size: 1.1em;
+    }
+    .nav-menu #menu-top{
+        margin-bottom: 2em;
+    }
+}
