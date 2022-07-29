@@ -536,25 +536,41 @@ a.br::before {
 }
 
 .certificates figure h2 {
-text-align: center;
-transform: rotate(40deg);
-background-color:#023c4e98;
-position: relative;
-top: -3em;
-right: 0;
+    text-align: center;
+    transform: rotate(40deg);
+    background-color: #023c4e98;
+    position: relative;
+    top: -3em;
+    right: 0;
 }
+
 .certificates figure img {
     width: 70vw;
 }
-.contacts .email i, .contacts .linkedin i{
+
+.contacts .email i, .contacts .linkedin i {
     font-size: 2em;
     color: #b1c7e3;
 }
-.contact_information{
+
+.contact_information {
     display: flex;
-    gap: 1em;
-    flex-direction: column;
+    gap: 2em;
 }
+
+.contact_information h3 {
+    /* font-size: 1.2em; */
+    text-align: left;
+}
+
+.contact_information a {
+    font-size: .8em;
+}
+
+.contact_information div {
+    margin-bottom: 2em;
+}
+
 .footer {
     margin-top: 2em;
     background-color: #02234e;
@@ -650,18 +666,221 @@ right: 0;
         top: 0;
         left: 0;
     }
-    .contacts{
+
+    .contacts {
         text-align: center;
     }
 }
+
 @media(min-width: 601px) {
-    .header-container h1{
+    p {
+        font-size: 1.8em;
+    }
+
+    #menu-top {
+        display: flex;
+    }
+
+    .gradient, .front-home h2 {
+        font-size: 2.5em;
+    }
+
+    .header-container h1 {
         font-size: 5em;
     }
-    .nav-menu #menu-top>a{
+
+    .nav-menu #menu-top>a {
         font-size: 1.1em;
+        font-weight: 700;
     }
-    .nav-menu #menu-top{
+
+    .nav-menu #menu-top {
         margin-bottom: 2em;
+    }
+
+    .language-selected {
+        font-size: 1.5em;
+    }
+
+    #title {
+        font-size: 3em;
+    }
+
+    @keyframes movement {
+
+        /* 0%{
+            transform: translate(-0%,0%);
+        }
+        50%{
+            transform: translate(-200%,300%);
+        }
+        100%{
+            transform: translate(0%,0%);
+        } */
+        0% {
+            transform: translate(-0%, 0%);
+        }
+
+        25% {
+            transform: translate(-250%, 300%);
+        }
+
+        50% {
+            transform: translate(100%, 650%);
+        }
+
+        75% {
+            transform: translate(500%, 300%);
+        }
+
+        100% {
+            transform: translate(-0%, 0%);
+        }
+    }
+
+    .front-home i.fa-js {
+        animation: movement 5s infinite ease-in-out;
+    }
+
+    .front-home i.fa-html5 {
+        animation: movement 5s infinite ease-in-out;
+        animation-delay: 1s;
+    }
+
+    .front-home i.fa-css3-alt {
+        animation: movement 5s infinite ease-in-out;
+        animation-delay: 2s;
+    }
+
+    .imgage-myself img {
+        width: 40%;
+    }
+
+    .knowledge {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box .html p, .box .css p, .box .javascript p {
+        font-size: 1.2em;
+    }
+
+    .knowledge_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 5em;
+    }
+
+    .certificates {
+        overflow: auto;
+    }
+
+    .certificates #certificates {
+        overflow: visible;
+    }
+
+    .certificates .slideshow {
+        position: relative;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        width: 80vw;
+        gap: 1em;
+    }
+
+    .certificates .slideshow p {
+        white-space: break-spaces;
+
+    }
+
+    .certificates .slideshow .scrum .figure, .certificates .slideshow .web-design .figure {
+        position: absolute;
+        opacity: 0;
+        transition: 1s opacity;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .certificates figure h2 {
+        text-align: center;
+        transform: rotate(30deg);
+        background-color: #023c4e98;
+        position: relative;
+        top: -6em;
+        right: 0;
+        padding: .5em 0;
+        font-size: 2em;
+    }
+
+    .contact_information {
+        display: flex;
+        gap: 3em;
+    }
+
+    .contact_information h3 {
+        font-size: 2em;
+        text-align: left;
+    }
+
+    .contact_information a {
+        font-size: 1.2em;
+    }
+
+    .contact_information div {
+        margin-bottom: 2em;
+    }
+
+    .contacts .email i, .contacts .linkedin i {
+        font-size: 3em;
+    }
+
+    .contact_div {
+        display: flex;
+        gap: 3em;
+    }
+
+    .footer {
+        font-size: 1.5em;
+    }
+
+}
+
+@media(min-width: 1024px) {
+    .header-container {
+        flex-direction: row;
+    }
+
+    .header-container h1 a {
+        display: flex;
+        flex-direction: row;
+        font-size: .5em;
+        position: relative;
+        top: -35px;
+        left: 10px;
+    }
+
+    .nav-menu #menu-top>a {
+        font-weight: 800;
+
+    }
+
+    .nav-menu #menu-top>a:hover {
+        background-color: gray;
+        border-radius: 10px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .knowledge_container{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 0;
+    }
+    .contact_div{
+        justify-content: center;
+    }
+    .soon{
+        margin: 0 5em;
     }
 }
