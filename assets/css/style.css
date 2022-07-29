@@ -680,6 +680,10 @@ a.br::before {
     #menu-top {
         display: flex;
     }
+    .nav-menu #menu-top>a:hover {
+        width: auto;
+        
+    }
 
     .gradient, .front-home h2 {
         font-size: 2.5em;
