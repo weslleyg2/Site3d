@@ -7,7 +7,7 @@
         const nav = document.getElementById('nav-menu');
         const menuTop = document.getElementById('menu-top');
         nav.classList.toggle('active');
-        // menuTop.classList.toggle('no-show');
+        menuTop.classList.toggle('no-show');
         
     }
     

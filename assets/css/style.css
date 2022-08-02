@@ -20,7 +20,7 @@ a {
 }
 
 p {
-    font-family: 'Acme', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.2em;
     text-align: center;
     margin-bottom: 1em;
@@ -545,7 +545,7 @@ a.br::before {
 }
 
 .certificates figure img {
-    width: 70vw;
+    height: 40vw;
 }
 
 .contacts .email i, .contacts .linkedin i {
@@ -701,7 +701,9 @@ a.br::before {
     .nav-menu #menu-top {
         margin-bottom: 2em;
     }
-
+    .language{
+        width: 170px;
+    }
     .language-selected {
         font-size: 1.5em;
     }
@@ -864,7 +866,9 @@ a.br::before {
         top: -35px;
         left: 10px;
     }
-
+    .language{
+        width: 200px;
+    }
     .nav-menu #menu-top>a {
         font-weight: 800;
 
@@ -886,5 +890,8 @@ a.br::before {
     }
     .soon{
         margin: 0 5em;
+    }
+    .certificates figure h2{
+        top: -20vw;
     }
 }
